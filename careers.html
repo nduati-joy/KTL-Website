@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<HEAD>
+<meta charset="UTF-8" > 
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    
+    <TITLE> KTL Farming Ltd Website </TITLE>
+
+
+
+
+<style> 
+
+
+.center{text-align: center;}
+
+h1{
+    font-size: 80px;
+
+    border: 8px solid rgb(5, 5, 97);
+
+    display: inline-block;
+
+    padding: 20px;
+
+    background-color: white;
+
+    margin-bottom: 10px;
+
+    box-shadow: 20px 20px 35px rgba(0,0,50,1);
+
+    border-radius: 15px;
+
+    
+    
+
+}
+
+
+.navbar {
+ color:whitesmoke;
+
+ padding: 10px 20px;
+
+ position: relative;
+}
+
+#menu-toggle {
+    display: none;
+
+}
+
+.menu{
+display: none ;
+
+flex-direction: column;
+
+background-color: black;
+
+font-size: 15px;
+
+width: 15%;
+
+top: 30px;
+
+left: 0;
+
+position: absolute;
+
+margin:auto;
+
+list-style: none;
+
+border-radius: 30px;
+
+padding: 0;
+
+align-items: left;
+
+
+
+}
+
+.menu li{
+    
+    margin: 8px 0;
+
+}
+
+.menu li a{
+ color: white;
+
+ text-decoration: none;
+
+ font-weight: bold;
+
+ padding: 10px 20px;
+
+ border-radius: 6px;
+
+ display: inline-block;
+
+ transition: background-color 0.3s;
+
+}
+
+
+
+#menu-toggle:checked ~.menu {display: flex;}
+     
+.navbar {
+ color:whitesmoke;
+
+ padding: 10px 20px;
+
+ position: relative;
+}
+
+#menu-toggle {
+    display: none;
+
+}
+
+.menu{
+display: none ;
+
+flex-direction: column;
+
+background-color: black;
+
+font-size: 15px;
+
+width: 15%;
+
+top: 30px;
+
+left: 0;
+
+position: absolute;
+
+margin:auto;
+
+list-style: none;
+
+border-radius: 30px;
+
+padding: 0;
+
+align-items: left;
+
+
+
+}
+
+.menu li{
+    
+    margin: 8px 0;
+
+}
+
+.menu li a{
+ color: white;
+
+ text-decoration: none;
+
+ font-weight: bold;
+
+ padding: 10px 20px;
+
+ border-radius: 6px;
+
+ display: inline-block;
+
+ transition: background-color 0.3s;
+
+}
+
+
+
+#menu-toggle:checked ~.menu {display: flex;}
+     
+
+footer{
+
+
+    background:#2c3e50;
+
+    color: white;
+
+    padding: 30px 20px;
+
+    text-align:center ;
+}
+
+.footer-containerwi{
+
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+gap: 20px; 
+
+margin-bottom: 20px;
+
+}
+.footer-container h3,
+.footer-container h4{
+    margin-bottom: 10px ;
+
+    color: gold;
+
+}
+.footer-links ul {
+    list-style: none;
+
+    padding: 0;
+
+    text-align: center;
+}
+.footer-links ul li{
+    line-height: 19px;
+
+    margin:  0;
+
+    list-style: none;
+}
+
+.footer-link a{
+    color: white;
+
+    text-decoration: none;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+
+    color: gold;
+}
+copyright {
+    font-size: 14px;
+
+    opacity: 0.8;
+}
+
+BODY{
+    background-image: url('WhatsApp ova.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    
+    
+}
+
+Body::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.5);
+z-index: -1;
+
+
+}
+
+.auto-underline {
+
+position: relative;
+
+display: inline-block;
+
+font-size: 45px;
+
+color: blue;
+
+
+}
+.auto-underline::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 0;
+
+    height: 3px;
+
+    left: 0;
+
+    bottom: -5px;
+
+    background-color: #000;
+
+    animation: grow-shrink 5s infinite alternate ;
+    
+}
+@keyframes grow-shrink {
+from {width: 0;} 
+to { width: 100%;}
+}
+h2{
+    font-size: 40px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+p2{
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    word-spacing: 10px;
+}
+
+p5{
+    font-size:30px ;
+
+    color: whitesmoke;
+}
+
+ i{
+font-size: 20px;
+
+
+}
+
+strong{
+    color: aqua;
+}
+</style>
+<Body>
+<nav class="navbar">
+    
+
+     <label for="menu-toggle" class="menu-icon">&#9776;
+     
+        <span></span>
+        <span></span>
+        <span></span>
+     </label>
+
+<input type="checkbox" id="menu-toggle">
+
+
+    <ul class="menu">
+        <li><a href="index.html" >Home</a></li>
+
+        <li><a href="about.html">About us</a></li>
+
+        <li><a href="products.html"> Our Products</a></li>
+
+        <li><a href="contact.html"> Contact Us</a></li>
+
+        <li><a href="careers.html"class="active">Our Careers</a></li>
+
+    </ul>
+
+
+</nav>    
+
+<div class="center">
+ 
+
+    <h1>
+        
+        
+<span style="color: black;">K</span>
+
+<span style="color: blue;">T</span>
+
+<span style="color: red;">L</span>
+
+
+    </h1>
+
+    </div>
+
+<h2 class="auto-underline"> Join Our Team.</h2>
+<p2><li>At KTL Farming Limited, we are cultivating not just crops,
+     but futures. Join us in building a smarter,
+     greener tomorrow.</li>
+</p2>
+
+<h2 class="auto-underline"> Current Openings</h2>
+
+<p2>
+    <ul>
+        <li><strong>Sales Representative</strong> -Passionate about promoting sustainable
+        farming products. Have knowledge in business</li>
+    </ul>
+</p2>
+
+<h2 class="auto-underline">How to Apply</h2>
+<p2><li>Send your CV and cover letter to<a href="mailto:careers@ktlfarming.com"><i>
+    careers@ktlfarming.com</i></li>
+
+</a></p2>
+
+
+    <footer>
+
+<div class="footer-container">
+
+<div class="footer-about">
+
+    <h3>KTL Farming Limited</h3>
+
+    <p5> Where every seed becomes a success story.</p5>
+
+</div>
+
+<div class="footer-links">
+
+    <h4> Quick-Links</h4>
+    <ul>
+       <li> <a href="index.html" >Home</a></li>
+
+       <li> <a href="about.html">About us</a></li>
+
+       <li><a href="products.html">Our Products</a></li>
+
+       <li><a href="contact.html">Contact Us</a></li>
+
+       <li><a href="careers.html" class="active">Our Careers</a></li>
+    
+    </ul>
+</div>
+
+
+<div class="footer-contact">
+
+    <h4>Contact Us</h4>
+
+    <p> Email: info@ktlfarming.com</p>
+
+    <p>Phone: +254 712 345 678</p>
+
+    <p> Kitale, Kenya</p>
+
+</div>
+</div>
+<p class="copyright">  &copy; 2025 KTL Farming Limited. All rights reserved. </p>
+
+
+
+
+</footer>
+
+
+
+
+</Body>

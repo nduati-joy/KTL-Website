@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+
+
+<HEAD>
+
+ <meta charset="UTF-8" > 
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    
+    <TITLE> KTL Farming Ltd Website </TITLE>
+
+
+
+
+<style> 
+
+
+.center{text-align: center;}
+
+.auto-underline {
+
+position: relative;
+
+display: inline-block;
+
+font-size: 45px;
+
+color: blue;
+
+
+}
+.auto-underline::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 0;
+
+    height: 3px;
+
+    left: 0;
+
+    bottom: -5px;
+
+    background-color: #000;
+
+    animation: grow-shrink 5s infinite alternate ;
+    
+}
+@keyframes grow-shrink {
+from {width: 0;} 
+to { width: 100%;}
+
+}
+.styled-heading{
+    font-size: 50PX;
+
+    font-weight: bold;
+
+    color:rgb(0, 0, 225) ;
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+
+
+.styled-heading::after{
+
+content:"" ;
+
+display: block;
+
+height: 6px;
+
+bottom: -6px;
+
+width: 100%;
+
+margin: 8px auto 0;
+
+background: linear-gradient(90deg,black,blue,red);
+
+border-radius: 3px;
+
+
+}
+.product-list{
+
+font-size: 30px;
+
+line-height: 1;
+
+padding-left:30px;
+
+color: whitesmoke;
+
+list-style-type:disc ;
+
+}
+
+.my-btn{
+background-color:#000;
+
+position: relative;
+
+left: 710px;
+
+color: blue;
+
+font-size: 20px;
+
+padding: 10px 25px;
+
+border-radius: 10px;
+
+cursor: pointer;
+
+            
+}   
+
+.typing {
+font-size:45px ;
+
+color: blue;
+
+font-weight: bold;
+
+white-space: nowrap;
+
+overflow: hidden;
+
+border-right: 2px blue;
+
+animation: typing 6s steps(12) infinite ,
+         blink 2s step-end infinite alternate;
+
+}
+
+@keyframes typing{
+0%{ width:0ch;}
+40%{width: 12ch;}
+50%{width:12ch;}
+60%{width:12ch ;}
+100%{width:0ch;}
+
+}
+
+@keyframes blink{
+50%{border-color: transparent;}
+
+}
+
+
+
+h1{
+    font-size: 80px;
+
+    border: 8px solid rgb(5, 5, 97);
+
+    display: inline-block;
+
+    padding: 20px;
+
+    background-color: white;
+
+    margin-bottom: 10px;
+
+    box-shadow: 20px 20px 35px rgba(0,0,50,1);
+
+    border-radius: 15px;
+
+    
+    
+
+}
+
+
+h2{
+text-align: center;
+
+color: rgb(0, 0, 225);
+
+font-size:50px ;
+
+text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
+
+ word-spacing: 12px 
+
+
+}
+h3{
+    
+    font-size: 45px;
+
+    color: blue;
+
+
+}
+p2{
+    display: inline-block;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 27px;
+
+    color: whitesmoke;
+    
+    word-spacing: 10px;
+
+    line-height: 50px;
+
+    
+    
+}
+
+h4{
+font-size:45px ;
+
+color: blue;
+
+
+}
+
+#why-choose-us h5 {
+text-align: left;
+
+width: 80%;
+
+font-family: Arial, sans-serif;
+
+margin: 4opx auto;
+
+font-size:45px ;
+
+margin-bottom: 20px;
+
+text-decoration: underline;
+
+text-decoration-color:black;
+
+color: blue;
+}
+#why-choose-us  {
+list-style: none;
+
+padding: 0;
+}
+#why-choose-us  {
+font-size:27px ;
+
+color:whitesmoke;
+
+line-height: 50px;
+
+margin: 10px
+
+
+}
+
+
+.slideshow-container {
+
+
+width:100% ;
+
+height: 600px;
+
+position: relative;
+
+overflow: hidden;
+
+margin:auto;
+
+border-radius: 10px;
+
+
+
+}
+
+.slideshow-container img {
+
+width: 100%;
+
+height: 100%;
+
+object-fit: cover;
+
+
+}
+
+.slide  {
+position: absolute;
+
+width: 100%;
+
+height: 100% ;
+
+opacity: 0;
+
+animation: fade 20s infinite;
+
+
+}
+
+.slide:nth-child(1) {animation-delay: 0s ;}
+
+.slide:nth-child(2) {animation-delay: 5s ;}
+
+.slide:nth-child(3) {animation-delay: 10s ;}
+
+.slide:nth-child(4) {animation-delay: 15s ;}
+
+
+
+
+
+@keyframes fade  {
+
+0%   {opacity: 0;}
+5%   {opacity: 1;}
+25%  {opacity: 1;}
+30%  {opacity: 0;}
+100% {opacity: 0;}
+
+}
+footer{
+
+
+    background:#2c3e50;
+
+    color: white;
+
+    padding: 30px 20px;
+
+    text-align:center ;
+}
+
+.footer-containerwi{
+
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+gap: 20px; 
+
+margin-bottom: 20px;
+
+}
+.footer-container h3,
+.footer-container h4{
+    margin-bottom: 10px ;
+
+    color: gold;
+
+}
+.footer-links ul {
+    list-style: none;
+
+    padding: 0;
+
+    text-align: center;
+}
+.footer-links ul li{
+    line-height: 19px;
+
+    margin:  0;
+
+    list-style: none;
+}
+
+.footer-link a{
+    color: white;
+
+    text-decoration: none;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+
+    color: gold;
+}
+copyright {
+    font-size: 14px;
+
+    opacity: 0.8;
+}
+
+p5{
+    font-size: 30px;
+}
+
+
+.navbar {
+ color:whitesmoke;
+
+ padding: 10px 20px;
+
+ position: relative;
+}
+
+#menu-toggle {
+    display: none;
+
+}
+
+.menu{
+display: none ;
+
+flex-direction: column;
+
+background-color: black;
+
+font-size: 15px;
+
+width: 100%;
+
+top: 30px;
+
+left: 0;
+
+position: absolute;
+
+margin:auto;
+
+list-style: none;
+
+border-radius: 30px;
+
+padding: 0;
+
+align-items: center;
+
+
+
+}
+
+.menu li{
+    
+    margin: 8px 0;
+
+}
+
+.menu li a{
+ color: white;
+
+ text-decoration: none;
+
+ font-weight: bold;
+
+ padding: 10px 20px;
+
+ border-radius: 6px;
+
+ display: inline-block;
+
+ transition: background-color 0.3s;
+
+}
+
+
+
+#menu-toggle:checked ~.menu {display: flex;}
+     
+
+
+
+BODY{
+    background-image: url('WhatsApp ova.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    
+    
+}
+
+Body::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.5);
+z-index: -1;
+
+
+}
+
+</style>
+
+</HEAD>
+
+
+
+
+<BODY>
+
+
+<nav class="navbar">
+    
+
+     <label for="menu-toggle" class="menu-icon">&#9776;
+     
+        <span></span>
+        <span></span>
+        <span></span>
+     </label>
+
+<input type="checkbox" id="menu-toggle">
+
+
+    <ul class="menu">
+        <li><a href="idex.html" class="active">Home</a></li>
+
+        <li><a href="about.html">About us</a></li>
+
+        <li><a href="products.html"> Our Products</a></li>
+
+        <li><a href="contact.html"> Contact Us</a></li>
+
+        <li><a href="careers.html">Our Careers</a></li>
+
+    </ul>
+
+
+</nav>    
+
+<div class="center">
+ 
+
+    <h1>
+        
+        
+<span style="color: black;">K</span>
+
+<span style="color: blue;">T</span>
+
+<span style="color: red;">L</span>
+
+
+    </h1>
+
+    </div>
+    
+
+    <h2 class="styled-heading"> KTL FARMING LIMITED</h2>
+
+    <p>
+    <ul class="product-list">
+        <li><i> Cultivating growth and nourishing features.</i></li>
+
+    </ul>
+    </p>
+
+
+    <p>
+        <ul class="product-list">
+            <li><i>
+        We farm smarter, grow better and reap prosperity.
+        </i>
+            </li>
+        </ul>
+    </p>
+
+
+    <p>
+        <ul class="product-list">
+            <li>
+            <i>
+        Where every seed becomes a success story.
+        
+            </i>
+            </li>
+        </ul>
+    </p>
+
+
+
+<h3 class="auto-underline"> About Us </h3>
+
+
+<p2>
+At <strong>KTL Farming Limited</strong>, we are dedicated to
+ providing fresh, healthy and sustainable agricultural products.
+</p2>
+
+
+<p2> From <em>farm to table</em> we ensure that every product we deliver 
+ is grown with care and handled with the highest quality standards.
+</p2>
+
+
+<button class="my-btn" ><a href="about.html"> Explore Our Journey</a>
+ </button>
+
+
+       
+<h4 class="typing">Our Products</h4>
+
+
+
+<div class="slideshow-container">
+
+<div class="slide">
+
+     <img src="Downloads/ovacado_1.jpeg" alt=" Avacado 1">
+</div>
+
+<div class="slide">
+
+      <img src="Downloads/ovacado_2.jpeg" alt="Avocado">
+</div>
+<div class="slide">
+
+      <img src="Downloads/ovacado_3.jpeg" alt=" Avacado 3">
+</div>
+<div class="slide">
+
+      <img src="Downloads/ovacado_4.jpeg" alt="Avocado 4">
+
+</div>
+
+</div>
+
+ 
+    
+
+    
+<section id="why-choose-us">
+<h5> Why Choose Us ? </h5>
+<ul>
+   <li> 
+    Fresh & Organic - grown naturally without harmful chemicals.
+   </li>
+
+ <li>
+Premium Quality - hand picked and carefully sorted
+ </li>
+
+   <li>
+Variety you love - Hass, Fuerte & Avocado Oil
+   </li>
+
+<li>
+    Supporting Farmers - working direct with local communities
+</li>
+
+<li>
+Export Standards - meeting international quality  standards
+</li>
+
+</ul>
+
+</section>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-about">
+
+    <h3>KTL Farming Limited</h3>
+
+    <p5> Where every seed becomes a success story.</p5>
+
+</div>
+
+<div class="footer-links">
+
+    <h4> Quick-Links</h4>
+    <ul>
+       <li> <a href="index.html" class="active">Home</a></li>
+
+       <li> <a href="about.html">About us</a></li>
+
+       <li><a href="products.html">Our Products</a></li>
+
+       <li><a href="contact.html">Contact Us</a></li>
+
+       <li><a href="careers.html">Our Careers</a></li>
+    
+    </ul>
+</div>
+
+
+<div class="footer-contact">
+
+    <h4>Contact Us</h4>
+
+    <p> Email: info@ktlfarming.com</p>
+
+    <p>Phone: +254 712 345 678</p>
+
+    <p> Kitale, Kenya</p>
+
+</div>
+</div>
+<p class="copyright">  &copy; 2025 KTL Farming Limited. All rights reserved. </p>
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+</BODY>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
