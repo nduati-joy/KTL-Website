@@ -85,8 +85,7 @@ header{
 }
 
 .logo{
-    display: flex;
-    position: fixed;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     gap: 10px;
