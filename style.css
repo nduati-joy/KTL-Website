@@ -51,8 +51,17 @@ text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
         border-radius: 10px;
         
     }
-    p{
-        font-size:8px
+
+    h2{
+      text-align: center;
+
+color: rgb(0, 0, 225);
+
+font-size:20 px ;
+
+text-shadow:1px 1px 7px rgba(0,110,105,0.8) ;
+
+ word-spacing: 4px  
     }
 }
 
@@ -72,6 +81,18 @@ h1{
     
 
 }
+
+    h2{
+      text-align: center;
+
+color: rgb(0, 0, 225);
+
+font-size:35px ;
+
+text-shadow:3px 3px 14px rgba(0,110,105,0.8) ;
+
+ word-spacing: 8px  
+    }
 } 
 
 
@@ -91,6 +112,18 @@ h1{
 
 
 }
+
+      h2{
+text-align: center;
+
+color: rgb(0, 0, 225);
+
+font-size:50px ;
+
+text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
+
+ word-spacing: 12px
+      }
 
 }
 
