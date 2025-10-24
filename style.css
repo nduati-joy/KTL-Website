@@ -40,6 +40,9 @@ body{
         border-radius: 10px;
         
     }
+    p{
+        font-size:8px
+    }
 }
 
 
@@ -81,9 +84,28 @@ h1{
 }
 
 .logo{
+    font-family: 'poppins',sans-serif;
+
+    font-size: 80px;
+
+    border: 8px solid rgb(5, 5, 97);
+
     display: inline-block;
-    align-items: center;
-    gap: 10px;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: white;
+
+    margin-bottom: 10px;
+
+    box-shadow: 20px 20px 35px rgba(0,0,50,1);
+
+    border-radius: 15px;
+
+    
+
     animation: slideFade 5s ease-out;
     
 }
