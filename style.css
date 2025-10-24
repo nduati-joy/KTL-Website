@@ -92,15 +92,16 @@ header{
 }
 
 .logo{
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
-    animation: slideIn 1.5s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    animation: slideFade 3s ease-out;
 }
 
-@keyframes slideIn {
-    from{ transform: translateY(-30px) ; opacity: 0;}
-    to{transform: translateY(0);opacity: 1 ;}
+@keyframes slideFade {
+    0%{ transform: translateY(-20px) ; opacity: 0;}
+    100%{transform: translateY(0);opacity: 1 ;}
 
 }
 body{
