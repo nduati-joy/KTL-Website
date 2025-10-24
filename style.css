@@ -189,3 +189,38 @@ align-items: left;
 
 #menu-toggle:checked ~.menu {display: flex;}
      
+.styled-heading{
+    font-size: 50PX;
+
+    font-weight: bold;
+
+    color:rgb(0, 0, 225) ;
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+
+
+.styled-heading::after{
+
+content:"" ;
+
+display: block;
+
+height: 6px;
+
+bottom: -6px;
+
+width: 100%;
+
+margin: 8px auto 0;
+
+background: linear-gradient(90deg,black,blue,red);
+
+border-radius: 3px;
+
+
+}
