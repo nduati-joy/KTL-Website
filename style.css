@@ -92,11 +92,12 @@ header{
 }
 
 .logo{
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    animation: slideFade 3s ease-out;
+    animation: slideFade 5s ease-out;
+    right:400px;
 }
 
 @keyframes slideFade {
