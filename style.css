@@ -290,3 +290,6 @@ header{
     top:0;
     width:100%;
     z-index: 1000;
+ body{
+     padding:40px;
+ }
