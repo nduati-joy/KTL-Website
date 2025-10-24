@@ -99,7 +99,7 @@ h1{
     align-items: center;
     gap: 10px;
     animation: slideFade 5s ease-out;
-    right:400px;
+    
 }
 
 @keyframes slideFade {
