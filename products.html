@@ -156,39 +156,32 @@ p2{
 <body>
 <header>
 
+    <div class="menu-icon" onclick="toggleMenu()">&#9776</div>
     
-<nav class="navbar">
+
+     <nav id="sideMenu" class="side-menu">
     
 
-     <label for="menu-toggle" class="menu-icon">&#9776;
-     
-        <span></span>
-        <span></span>
-        <span></span>
-     </label>
 
-<input type="checkbox" id="menu-toggle">
+    
+        <a href="index.html" >Home</a>
 
+        <a href="about.html" class="active">About us</a>
 
-    <ul class="menu">
-        <li><a href="index.html" >Home</a></li>
+        <a href="products.html"> Our Products</a>
 
-        <li><a href="about.html">About us</a></li>
+        <a href="contact.html"> Contact Us</a>
 
-        <li><a href="products.html" class="active"> Our Products</a></li>
+        <a href="careers.html">Our Careers</a>
 
-        <li><a href="contact.html"> Contact Us</a></li>
-
-        <li><a href="careers.html">Our Careers</a></li>
-
-    </ul>
+    
 
 
 </nav>    
+<div id="overlay" class="overlay"
+    onclick="toggleMenu()"></div>
 
-
- 
-
+    
 
     <div class="center">
     <h1 class="logo">
@@ -274,6 +267,7 @@ p2{
 </body>
 
 </html>
+
 
 
 
