@@ -82,7 +82,7 @@ h1{
 header{
     position: absolute;
     top: 0;
-    display: block;
+    display: flex;
     
     padding: 20px 20px;
     width: 100%;
@@ -91,7 +91,18 @@ header{
     background-color: rgb(32, 206, 32);
 }
 
+.logo{
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    animation: slideIn 1.5s ease-out;
+}
 
+@keyframes slideIn {
+    from{ transform: translateY(-30px) ; opacity: 0;}
+    to{transform: translateY(0);opacity: 1 ;}
+
+}
 body{
     margin: 0;
     padding-top: 300px;
