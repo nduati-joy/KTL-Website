@@ -363,34 +363,32 @@ z-index: -1;
  <header>
 
 
-<nav class="navbar">
+<div class="menu-icon" onclick="toggleMenu()">&#9776</div>
     
 
-     <label for="menu-toggle" class="menu-icon">&#9776;
-     
-        <span></span>
-        <span></span>
-        <span></span>
-     </label>
-
-<input type="checkbox" id="menu-toggle">
+     <nav id="sideMenu" class="side-menu">
+    
 
 
-    <ul class="menu">
-        <li><a href="idex.html" class="active">Home</a></li>
+    
+        <a href="index.html" >Home</a>
 
-        <li><a href="about.html">About us</a></li>
+        <a href="about.html" class="active">About us</a>
 
-        <li><a href="products.html"> Our Products</a></li>
+        <a href="products.html"> Our Products</a>
 
-        <li><a href="contact.html"> Contact Us</a></li>
+        <a href="contact.html"> Contact Us</a>
 
-        <li><a href="careers.html">Our Careers</a></li>
+        <a href="careers.html">Our Careers</a>
 
-    </ul>
+    
 
 
 </nav>    
+<div id="overlay" class="overlay"
+    onclick="toggleMenu()"></div>
+
+    
 
 <div class="center">
  
@@ -611,6 +609,7 @@ Export Standards - meeting international quality  standards
 
 
 </html>
+
 
 
 
