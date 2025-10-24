@@ -286,7 +286,7 @@ position: relative;
 }
 header{
     background-color:rgb(34, 202, 34);
-    position:fixed;
+    position:absolute;
     top:0;
     width:100%;
     z-index: 1000;
