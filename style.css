@@ -81,7 +81,7 @@ h1{
 }
 
 .logo{
-    display: flex;
+    display: inline-block;
     align-items: center;
     gap: 10px;
     animation: slideFade 5s ease-out;
