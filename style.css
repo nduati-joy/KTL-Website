@@ -268,3 +268,25 @@ border-radius: 3px;
 
 
 }
+
+.wave-separator {
+position: relative;
+    top:0;
+    width:100%;
+    line-height:0%;
+
+    
+}
+
+.wave-separater{
+
+    display:block;
+    width:100%;
+    line-height:70px
+}
+header{
+    background-color:rgb(34, 202, 34);
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 1000;
