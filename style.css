@@ -79,14 +79,13 @@ h1{
 }
 
 }
-.header{
-    position:relative;
+header{
+    position:absolute;
     width: 100%;
     top:0;
     background-color: rgb(34, 202, 34);
     padding: 15px 50px ;
     display: flex;
-    justify-content: center;
     box-shadow: 0 2px 5px rgba( 0,0,0,0.1)
     z-index:1000;
     
