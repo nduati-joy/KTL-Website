@@ -85,9 +85,8 @@ header{
     position:fixed;
     padding:10px 20px;
     z-index:1000;
-    text-align:center;
-
-    background-color: grey;
+    border: 95%;
+    background-color: white;
 }
 
 .logo{
