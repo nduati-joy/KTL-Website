@@ -1,5 +1,5 @@
 CSS
-h1{
+body{
     h1{
     font-family: 'poppins',sans-serif;
 
@@ -82,7 +82,7 @@ h1{
 }
 .header{
     width: 100%;
-    background-color:rgb(34, 202, 34);
+    background-color: rgb(34, 202, 34);
     padding: 15px 50px ;
     display: flex;
     justify-content: center;
