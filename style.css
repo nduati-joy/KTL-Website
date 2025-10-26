@@ -168,7 +168,7 @@ text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
     font-size:28px;
     cursor:pointer;
     display:none;
-    user-select:none;
+    
 }
 
 .menu{
@@ -208,7 +208,7 @@ text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
 
 
 
-#menu-toggle: checked + .menu-icon + .menu ~ .menu {
+#menu-toggle: checked + .menu-icon + .menu {
     transform:translateX(0);
 }
 
