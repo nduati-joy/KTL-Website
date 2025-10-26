@@ -1,19 +1,20 @@
 Js
 
-function toggleMenu() {
-    const menu = document.getElementById("side-menu");
-    const overlay = document.getElementById("ovet lay");
+const menuBtn = document.getElementById('menu-btn');
+const sideMenu = document.getElementById('side-menu');
+const overlay = document.getElementById('overlay');
 
-    MenuBtn.addEventListener("click",()=> {
-        menu.classlist.toggle("open");
-        overlay.classlist.toggle("show");
-    });
+// Open/close menu on button click
+menuBtn.addEventListener('click', () => {
+  sideMenu.classList.toggle('active');
+  overlay.classList.toggle('active');
+});
 
-    overlay..addEventListener("click", ()=> {
-        menu.classlist.remove("open");
-        overlay.classlist.remove("show");
-    });
-
+// Close menu when clicking outside (overlay)
+overlay.addEventListener('click', () => {
+  sideMenu.classList.remove('active');
+  overlay.classList.remove('active');
+});
 
     
 
