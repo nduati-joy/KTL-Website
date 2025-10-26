@@ -161,46 +161,47 @@ text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
 }
 
 
-.navbar {
- color:whitesmoke;
-
- padding: 10px 20px;
-
- position: fixed;
+.menu-toggle{
+    font-size:30px;
+    cursor:pointer;
+}
 
 .side-menu {
-  position: absolute;
-  top: 20px;
-  left: 0; 
-  width: 75%;
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  width: 250;
   height: 100%;
   background-color: white;
-   margin:auto; 
-  box-shadow: 4px 0 15px rgba(0,0,0,0.3);
-  overflow-x:hidden ; 
-  transition:0.4s;
+    display:flex;
+    flex-direction:column;
+  justify-content: start; 
+  transition:left 0.3s ease;
   padding-top: 60px;
   z-index: 1000;
 }
 
 .side-menu.a {
-  display:block;
-    padding:15px 25px;
+  
+    padding:15px 20px;
     text-decoration:none;
-    font-size:20px;
+    font-size:18px;
     color:black;
-    transition:0.3s;
+    
     
     
 }
 
 
 .side-menu a:hover {
-  background-color: #f0f0f0;
+  background-color: gold;
 }
 
+.side-menu.active{
+    left:0;
+}
 
-.close.btn{
+.close-btn{
   position: absolute;
   top: 10px;
   right: 20px;
