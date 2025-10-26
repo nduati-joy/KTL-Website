@@ -1,20 +1,24 @@
 Js
 
-const menuBtn = document.getElementById('menu-btn');
-const sideMenu = document.getElementById('side-menu');
-const overlay = document.getElementById('overlay');
+function openMenu(){
+  document.getElementById("side.menu").style.width="75%";
+}
 
-// Open/close menu on button click
-menuBtn.addEventListener('click', () => {
-  sideMenu.classList.toggle('active');
-  overlay.classList.toggle('active');
-});
+function closedMenu(){
+  document.getElementById("side.menu").style.width="0";
+}
+  document.addEventlistener('click', function(event){
+    const menu = document.getElementById("side-menu");
+     const icon = document.querySelector("menu-icon");
+    if(!menu.contains(event.target) && !
+       icon.contains(event. target)) {
+      closeMenu();
+    }
+    ));
+  
 
-// Close menu when clicking outside (overlay)
-overlay.addEventListener('click', () => {
-  sideMenu.classList.remove('active');
-  overlay.classList.remove('active');
-});
+    
+
 
     
 
