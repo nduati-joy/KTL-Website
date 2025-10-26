@@ -164,6 +164,12 @@ text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
 #menu-toggle{
     display:none;
 }
+.menu-icon{
+    font-size:28px;
+    cursor:pointer;
+    display:none;
+    user-select:none;
+}
 
 .menu{
     display:flex;
@@ -199,14 +205,7 @@ text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
   
 }
 
-.side-menu.a {
-  
-    padding:15px 20px;
-    text-decoration:none;
-    font-size:18px;
-    color:black;
-    
-    
+
     
 }
 
