@@ -1,21 +1,16 @@
-<script>
-    function toggleMenu(){
-        const menu = document.getElementById("sideMenu");
-        const overlay = document.getElementById("overlay");
+Js
 
+function toggleMenu() {
+    const menu = document.getElementById("side-menu");
+    const overlay = document.getElementById("ovet lay");
 
-        if (menu.style.width ==="75%") {
-            menu.style.width = "0";
-            overlay.style.width = "0";
-        }
-        else{
-            menu.style.width = "75%";
-            overlay.style.width = "100%";
-        }
-    }
+    menu.classlist.toggle("open");
+    overlay.classlist.toggle("show");
+}
+    
     
 
     
-</script>
+
 
 
