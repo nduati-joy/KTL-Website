@@ -161,7 +161,7 @@ text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
 }
 
 
-#menu-toggle{
+#menu-toggle {
     display:none;
 }
 .menu-icon{
@@ -206,17 +206,15 @@ text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
 }
 
 
-    
+
+
+#menu-toggle: checked + .menu-icon + .menu ~ .menu {
+    transform:translateX(0);
 }
 
-
-.menu a {
+    .menu a {
   padding:15px 0;
     width:100%;
-}
-
-#menu-toggle: checked ~ .menu {
-    transform:translateX(0);
 }
 }
 
