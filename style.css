@@ -159,13 +159,7 @@ text-shadow:5px 5px 20px rgba(0,110,105,0.8) ;
     100%{transform: translateY(0);opacity: 1 ;}
 
 }
-.navbar {
- color:whitesmoke;
 
- padding: 10px 20px;
-
- position: fixed;
-}
 
 #menu-toggle{
     display:none;
